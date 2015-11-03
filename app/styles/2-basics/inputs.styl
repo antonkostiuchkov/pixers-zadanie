@@ -1,0 +1,30 @@
+input[type="email"], input[type="password"]
+  border: none
+  border-bottom: 2px solid darken(bg-color, 15%)
+  font-size: 1.2em
+  padding: 10px 0
+  width: 100%
+  outline: none
+  margin: 0
+  background: none
+  display: inline-block
+
+[type="submit"]
+  float: right
+  margin-right: 20px
+
+input:focus + label,
+input.has-value + label
+  top: -10px
+  font-size: 0.8em
+  color: #aaa
+
+
+// Removing webkit-autofill
+input:-webkit-autofill
+  -webkit-box-shadow:0 0 0 50px bg-color inset;
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: ,0 0 0 50px bg-color inset;
+  -webkit-text-fill-color: #333;
+}

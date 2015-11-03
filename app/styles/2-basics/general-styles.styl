@@ -1,0 +1,91 @@
+ul
+  padding: 0
+
+  li
+    list-style-type: none
+
+.container
+  lost-center: 600px
+  margin-bottom: 100px
+
+p
+  margin: 5px auto
+
+
+
+// List of emails and passwords
+
+
+#users li
+  margin-bottom: 10px
+  padding: 20px
+  lost-utility: clearfix
+  position: relative
+  background-color: darken(bg-color, 5%)
+
+  p
+    lost-column: 3/4
+
+    +below(480px)
+      lost-column 1/1
+
+  button
+    lost-column: 1/4
+    position: absolute
+    right: 20px
+
+    +below(480px)
+      lost-column 1/1
+      position: relative
+      display: block
+      right: 0
+
+
+// On successful login
+.success-login
+  display: none
+
+  a
+    width: 100%
+
+
+
+// Form
+
+form
+  padding: 20px
+
+fieldset
+  margin: 0
+  padding: 0
+  border: 0
+  position: relative
+  lost-utility: clearfixuccess-login
+
+.required, .invalid
+  color: red
+  display: none
+  font-size: 0.8em
+
+.required
+  position: absolute
+
+.input-group
+  lost-column: 1/2
+  margin: 30px auto
+  position: relative
+
+  +below(550px)
+    lost-column: 1/1
+
+  label
+    position: absolute
+    transform: translateY(-50%)
+    top: 50%
+    left: 0px
+    font-size: 1.2em
+    font-style: italic
+    color: #999
+    pointer-events: none
+    transition: all 100ms ease-in-out
+
